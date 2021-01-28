@@ -1,0 +1,56 @@
+<Button>
+	text: "0"
+	font_size: 40
+	background_color: (0, 0.8, 0.8, 1)
+	color: (0, 1, 1, 1)	
+
+<TicTacToe>
+	b1:b1
+	b2:b2
+	b3:b3
+	b4:b4
+	b5:b5
+	b6:b6
+	b7:b7
+	b8:b8
+	b9:b9
+	GridLayout:
+		size: root.width, root.height
+		cols: 1
+		Label:
+			text: "Tic Tac Toe"
+			font_size: 70
+			color: (0, 1, 1, 1)
+		GridLayout:
+			cols: 3
+			Button:
+				id: b1
+				on_press: root.btn(b1)
+			Button:
+				id: b2
+				on_press: root.btn(b2)
+			Button:
+				id: b3
+				on_press: root.btn(b3)
+		GridLayout:
+			cols: 3
+			Button:
+				id: b4
+				on_press: root.btn(b4)
+			Button:
+				id: b5
+				on_press: root.btn(b5)
+			Button:
+				id: b6
+				on_press: root.btn(b6)
+		GridLayout:
+			cols: 3
+			Button:
+				id: b7
+				on_press: root.btn(b7)
+			Button:
+				id: b8
+				on_press: root.btn(b8)
+			Button:
+				id: b9
+				on_press: root.btn(b9)
